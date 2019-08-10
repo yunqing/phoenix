@@ -5,22 +5,22 @@ My [Phoenix](https://github.com/kasper/phoenix) setup. Powerful, easy to customi
 
 ## Installation
 
-This configuration uses a remap of the Caps Lock key to something more useful: the Hyper key <kbd>⇪</kbd> (basically just <kbd>ctrl + alt + cmd</kbd> combined into one key) if used in combination with other keys, otherwise it gets mapped to <kbd>F18</kbd>, which is used to trigger the space switcher. If you prefer you may skip these remap steps while you try the configuration, but if you usually have many spaces opened I highly recommend you not to miss out the awesome space switcher, for which this hack is a requirement.
+This configuration uses a remap of the Caps Lock key to something more useful: the Hyper key <kbd>⇪</kbd> (basically just <kbd>ctrl + alt + cmd</kbd> combined into one key) if used in combination with other keys, otherwise it gets mapped to <kbd>Escape</kbd>, because I'm a heavy vim user. To trigger the space switcher, <kbd>Escape</kbd> is mapped to <kbd>F18</kbd>. If you prefer you may skip these remap steps while you try the configuration, but if you usually have many spaces opened I highly recommend you not to miss out the awesome space switcher, for which this hack is a requirement.
 
 1. Install [Phoenix](https://github.com/kasper/phoenix#install)
 2. Install [Karabiner Elements](https://github.com/tekezo/Karabiner-Elements) via its [dmg](https://pqrs.org/latest/karabiner-elements-latest.dmg)
-3. Replace Caps Lock with Hyper/F18 using [this](http://tinyurl.com/yc8m5qe8) Karabiner Elements configuration (if the link doesn't work copy and paste this in a browser: `karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fraw.githubusercontent.com%2Ffabiospampinato%2Fphoenix%2Fmaster%2Fconfig%2Fkarabiner.json`)
+3. Replace Caps Lock with Hyper/F18 using [this](https://tinyurl.com/yymm2yub) Karabiner Elements configuration (if the link doesn't work copy and paste this in a browser: `karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyunqing%2Fphoenix%2Fmaster%2Fconfig%2Fkarabiner.json`)
 4. `$ mkdir ~/.config`
 5. `$ cd ~/.config`
-6. `$ git clone git@github.com:fabiospampinato/phoenix.git`
+6. `$ git clone git@github.com:yunqing/phoenix.git`
 7. Restart Phoenix
 8. Enjoy!
 
 ## Customization
 
-To disable specific features, just comment out their correspondent `require` call in [phoenix.js](https://github.com/fabiospampinato/phoenix/blob/master/phoenix.js).
+To disable specific features, just comment out their correspondent `require` call in [phoenix.js](https://github.com/yunqing/phoenix/blob/master/phoenix.js).
 
-To tweak some numbers, simply edit [constants.js](https://github.com/fabiospampinato/phoenix/blob/master/config/constants.js).
+To tweak some numbers, simply edit [constants.js](https://github.com/yunqing/phoenix/blob/master/config/constants.js).
 
 Changing the specific shortcut used to trigger an action is pretty trivial.
 

@@ -1,8 +1,8 @@
 {
-  "title": "Caps Lock -> Hyper/F18",
+  "title": "Caps Lock -> Hyper/Escape; Escape -> F18",
   "rules": [
     {
-      "description": "Remap Caps Lock to Hyper (ctrl + alt + cmd) if used in combination with other keys, otherwise map it to F18.",
+      "description": "Remap Caps Lock to Hyper (ctrl + alt + cmd) if used in combination with other keys, otherwise map it to Escape.",
       "manipulators": [
         {
           "type": "basic",
@@ -23,6 +23,27 @@
               ]
             }
           ],
+          "to_if_alone": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Remap Escape to F18 if not used in combination with other keys.",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
           "to_if_alone": [
             {
               "key_code": "f18"
